@@ -38,9 +38,15 @@ public class TestCommand extends Command{
 ```
 
 #Setting up the bot
+###MySQL Setup
+The bot requires a MySQL Database.  
+Run the SQL script inside of the database folder named createDatabase.sql
+
+###Creating the Bot
 ```java
 	public static void main(String [] args) {	
 		Server server = new Server();
+		server.addOwner("Phased");
 		server.addBot(new IRCBot(server, "Bot1", "#phasedbottest"));
 	}
 ```
@@ -49,4 +55,5 @@ public class TestCommand extends Command{
 ```java
   server.register(new TestCommand()); //register a Command
   server.register(new TestAction()); //register an Action
+  server.registerOwner(new OwnerOnlyCommand()); //register a Command that only people that have been added as an Owner.
 ```
