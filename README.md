@@ -10,7 +10,11 @@ An easy to extend IRC Bot, which allows you to register new commands without alt
 [httpclient-4.0.2.jar](http://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient/4.0.2)  
 [httpcore-4.0.1_1.jar](http://mvnrepository.com/artifact/org.apache.geronimo.bundles/httpcore/4.0.1_1)  
 [pircbot.jar](http://www.jibble.org/pircbot.php)  
-[WolframAlpha-1.1.jar](http://products.wolframalpha.com/api/libraries.html)  
+[WolframAlpha-1.1.jar](http://products.wolframalpha.com/api/libraries.html)
+
+#Included API
+This API does not need to be downloaded, as it is included in the source code.  
+[Chatter Bot API](https://github.com/pierredavidbelanger/chatter-bot-api)
 
 #Creating a new Command Or Action
 Both Command and Action have a similar style, just import and extend Action.
