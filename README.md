@@ -42,6 +42,8 @@ public class TestCommand extends Command{
 The bot requires a MySQL Database.  
 Run the SQL script inside of the database folder named createDatabase.sql
 
+If you do not want a MySQL Database, you may edit the bot to remove the two related Commands SaveToDatabase.java and GetFromDatabase.java as well as removing the code inside of the methods in DatabaseConnection.
+
 ###Creating the Bot
 ```java
 	public static void main(String [] args) {	
