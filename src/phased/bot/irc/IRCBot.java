@@ -23,7 +23,7 @@ public class IRCBot extends PircBot{
 	private ChatterBotEngine chatterBot;
 
 	public IRCBot(Server server, String botName, String channelName) {
-		this.setVerbose(true); //debug
+		this.setVerbose(false); //debug
 		connectToServer(botName, "irc.freenode.net");
 		this.joinChannel(channelName);
 		this.channelName = channelName;
